@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf%}
+{% block title %} Login - {{super()}} {% endblock %}
+{% block app_content %}
+<div class ='row'>
+  <div class = 'col-md-4 offset-md-4'>
+    <h1>Login</h1>
+    {{ wtf.quick_form(form)}}
+  </div>
+</div>
+
+    <!-- <h1>Login</h1>
+    <form action="" method="post">
+      {{ form.hidden_tag() }}
+    <p>
+      {{ form.username.label }} <br>
+      {{ form.username(size = 32) }}
+    </p>
+    <p>
+      {{ form.password.label }}<br>
+      {{ form.password(size = 32) }}
+    </p>
+    <p>
+      {{ form.remember_me() }}
+      {{ form.remember_me.label}}
+    </p>
+    <p>{{ form.submit() }}</p>
+    </form> -->
+
+{% endblock %}

@@ -1,0 +1,17 @@
+h1 {
+  color: #343a40;
+  margin-bottom: 20px;
+  text-align:center;
+}
+
+.navbar,.navbar-inverse {
+  border-radius: 0px;
+}
+
+form{
+  margin-bottom: 100px;
+}
+
+.btn{
+  width: 100%;
+}
